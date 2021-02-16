@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import img from './img/plusandminus.png'
+import {FaGithub} from 'react-icons/fa';
 
 // Styled Components
-import {Calculator, Display, NumberContainer, Buttons, Button, Img} from './App.elements';
+import {Calculator, Display, NumberContainer, Buttons, Button, Img, SocialIcon, LinkContainer, SocialIconLink} from './App.elements';
 
-// Functions
-import handleDisplayFontSize from './functions/handleDisplayFontSize';
 
 /* 
   TODO: 
@@ -285,30 +284,37 @@ const App = () => {
   
 
   return (
-    <Calculator>
-     <Display><NumberContainer style={handleDisplayFontSize()}>{displayedNumber}</NumberContainer></Display>
-     <Buttons>
-       <Button onClick={handleClearClick} className="modifier AC">{handleClearButtonDisplay()}</Button>
-       <Button onClick={handleChangeSignClick} className="modifier changeSign"><Img src={img} /></Button>
-       <Button onClick={handlePercentageClick} className="modifier %">%</Button>
-       <Button onClick={(event) => handleOperationClick(event)} selected={(selectedOperation === '÷')} className="operation /">÷</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number seven">7</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number eight">8</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number nine">9</Button>
-       <Button onClick={(event) => handleOperationClick(event)} selected={(selectedOperation === '×')} className="operation x">×</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number four">4</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number five">5</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number six">6</Button>
-       <Button onClick={(event) => handleOperationClick(event)} selected={(selectedOperation === '−')} className="operation minus">−</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number one">1</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number 2">2</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number three">3</Button>
-       <Button onClick={(event) => handleOperationClick(event)} selected={(selectedOperation === '+')} className="operation plus">+</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number zero">0</Button>
-       <Button onClick={(event) => handleNumberClick(event)} className="number dot">.</Button>
-       <Button onClick={handleEquals} className="operation equals">=</Button>
-     </Buttons>
-    </Calculator>
+    <>
+      <SocialIcon>
+        <SocialIconLink href='https://github.com/JeremyDudet/mac-calculator-clone' target="_blank" aria-label="GitHub">
+          <FaGithub size={'1.2em'}/>
+        </SocialIconLink>
+      </SocialIcon>
+      <Calculator>
+      <Display><NumberContainer style={handleDisplayFontSize()}>{displayedNumber}</NumberContainer></Display>
+      <Buttons>
+        <Button onClick={handleClearClick} className="modifier AC">{handleClearButtonDisplay()}</Button>
+        <Button onClick={handleChangeSignClick} className="modifier changeSign"><Img src={img} /></Button>
+        <Button onClick={handlePercentageClick} className="modifier %">%</Button>
+        <Button onClick={(event) => handleOperationClick(event)} selected={(selectedOperation === '÷')} className="operation /">÷</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number seven">7</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number eight">8</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number nine">9</Button>
+        <Button onClick={(event) => handleOperationClick(event)} selected={(selectedOperation === '×')} className="operation x">×</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number four">4</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number five">5</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number six">6</Button>
+        <Button onClick={(event) => handleOperationClick(event)} selected={(selectedOperation === '−')} className="operation minus">−</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number one">1</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number 2">2</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number three">3</Button>
+        <Button onClick={(event) => handleOperationClick(event)} selected={(selectedOperation === '+')} className="operation plus">+</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number zero">0</Button>
+        <Button onClick={(event) => handleNumberClick(event)} className="number dot">.</Button>
+        <Button onClick={handleEquals} className="operation equals">=</Button>
+      </Buttons>
+      </Calculator>
+    </>
   );
 };
 

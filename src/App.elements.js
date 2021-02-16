@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const Calculator = styled.div`
   display: grid;
   color: #EDEDED;
@@ -72,4 +74,21 @@ export const Img = styled.img`
   background-color: transparent;
   width: 28px;
   height: 28px;
+`;
+
+
+export const SocialIcon = styled.div`
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  width:  auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+`;
+
+export const SocialIconLink = styled.a`
+  color: #333;
+  height: auto;
+  width: auto;
 `;

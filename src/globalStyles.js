@@ -20,7 +20,6 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background: #fff;
-    color: white;
     font-family: 'Roboto_Regular';
     font-size: 1.1rem;
   }
