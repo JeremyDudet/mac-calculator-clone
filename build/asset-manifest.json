@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/static/js/main.daeee2db.chunk.js",
+    "main.js.map": "/static/js/main.daeee2db.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8264b93d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8264b93d.js.map",
+    "static/js/2.4b66d6d2.chunk.js": "/static/js/2.4b66d6d2.chunk.js",
+    "static/js/2.4b66d6d2.chunk.js.map": "/static/js/2.4b66d6d2.chunk.js.map",
+    "static/js/3.8ef2341d.chunk.js": "/static/js/3.8ef2341d.chunk.js",
+    "static/js/3.8ef2341d.chunk.js.map": "/static/js/3.8ef2341d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.4b66d6d2.chunk.js.LICENSE.txt": "/static/js/2.4b66d6d2.chunk.js.LICENSE.txt",
+    "static/media/Roboto-Regular.03523cf5.ttf": "/static/media/Roboto-Regular.03523cf5.ttf",
+    "static/media/Roboto-Thin.c38fab23.ttf": "/static/media/Roboto-Thin.c38fab23.ttf",
+    "static/media/cristina-gottardi-CSpjU6hYo_0-unsplash.1a46b2b1.jpg": "/static/media/cristina-gottardi-CSpjU6hYo_0-unsplash.1a46b2b1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8264b93d.js",
+    "static/js/2.4b66d6d2.chunk.js",
+    "static/js/main.daeee2db.chunk.js"
+  ]
+}
