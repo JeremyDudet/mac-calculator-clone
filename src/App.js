@@ -6,7 +6,6 @@ import { FaGithub } from 'react-icons/fa';
 // Styled Components
 import {
   Calculator,
-  bluredLayer,
   Display,
   NumberContainer,
   Buttons,
